@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 class Frame extends Component {
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     if (nextProps.styleSheets.join('') !== this.props.styleSheets.join('')) {
       this.updateStylesheets(nextProps.styleSheets);
     }
